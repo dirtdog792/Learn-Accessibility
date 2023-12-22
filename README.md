@@ -40,8 +40,23 @@ A useful property of an SVG (scalable vector graphics) is that it contains a pat
 Currently, the img is assuming its default size, which is too large. CSS has a max function which returns the largest of a set of comma-separated values. For example:
 
 img {
-  width: max(250px, 25vw);
+width: max(250px, 25vw);
 }
 In this example, img elements will have a minimum width of 250px. And as the viewport grows, the image will grow accordingly to be 25 percent of the viewport width.
 
 Scale the image using its id as a selector, and setting the width to be the maximum of 100px or 18vw.
+Step 9Passed
+As described in the freeCodeCamp Style Guide, the logo should retain an aspect ratio of 35 / 4, and have padding around the text.
+
+First, change the background-color to #0a0a23 so you can see the logo. Then, use the aspect-ratio property to set the desired aspect ratio to 35 / 4. Finally, add a padding of 0.4rem all around.
+Step 10
+Make the header take up the full width of its parent container, set its height to 50px, and set the background-color to #1b1b32. Then, set the display to use Flexbox.
+Step 11
+Change the h1 font color to #f1be32, and set the font size to min(5vw, 1.2em).
+Step 12
+To enable navigation on the page, add an unordered list with the following three list items:
+
+INFO
+HTML
+CSS
+The list items text should be wrapped in anchor tags.
