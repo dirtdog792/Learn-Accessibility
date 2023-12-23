@@ -83,4 +83,38 @@ student-info
 html-questions
 css-questions
 Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content.
+Step 17
+Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens.
+
+Change the font for both the h1 and h2 elements to Verdana, and use another web-safe font in the sans-serif family as a fallback.
+
+Also, add a border-bottom of 4px solid #dfdfe2 to h2 elements to make the sections distinct.
+Step 18
+To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements.
+Step 19
+Filling out the content of the quiz, below #student-info, add three div elements with a class of info.
+
+Then, within each div nest one label element, and one input element.
+Step 20
+It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input.
+
+This is done by giving the label a for attribute, which contains the id of the input.
+
+This section will take a student's name, email address, and date of birth. Give the label elements appropriate for attributes, as well as text content. Then, link the input elements to the corresponding label elements.
+Step 21
+Keeping in mind best-practices for form inputs, give each input an appropriate type and name attribute. Then, give the first input a placeholder attribute.
+Step 22
+Even though you added a placeholder to the first input element in the previous lesson, this is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input.
+
+Remove the placeholder text from the first input element, relying on the label being the best-practice.
+Step 23
+Arguably, D.O.B. is not descriptive enough. This is especially true for visually impaired users. One way to get around such an issue, without having to add visible text to the label, is to add text only a screen reader can read.
+
+Append a span element with a class of sr-only to the current text content of the third label element.
+Step 24
+Within the span element, add the text (Date of Birth).
+Step 25
+The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
+
+This pattern is to set the following CSS properties:
 
