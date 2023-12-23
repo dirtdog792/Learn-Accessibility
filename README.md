@@ -117,4 +117,20 @@ Step 25
 The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read.
 
 This pattern is to set the following CSS properties:
+Step 26Passed
+Within the second section element, add two div elements with a class of question-block.
+
+Then, within each div.question-block element, add one p element with text of incrementing numbers, starting at 1, and one fieldset element with a class of question.
+Step 27
+Each fieldset will contain a true/false question.
+
+Within each fieldset, nest one legend element, and one ul element with two options.
+Step 28
+Give each fieldset an adequate name attribute. Then, give both unordered lists a class of answers-list.
+
+Finally, use the legend to caption the content of the fieldset by placing a true/false question as the text content.
+Step 29
+To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
+
+Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.
 
