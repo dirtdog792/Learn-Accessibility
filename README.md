@@ -133,4 +133,6 @@ Step 29
 To provide the functionality of the true/false questions, we need a set of inputs which do not allow both to be selected at the same time.
 
 Within each list element, nest one label element, and within each label element, nest one input element with the appropriate type.
+Step 30
+Add an id to all of your radio inputs so you can link your labels to them. Give the first one an id of q1-a1. Give the rest of them ids of q1-a2, q2-a1, and q2-a2, respectively.
 
