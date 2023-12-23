@@ -60,3 +60,27 @@ INFO
 HTML
 CSS
 The list items text should be wrapped in anchor tags.
+Step 13
+The child combinator selector > is used between selectors to target only elements that match the second selector and are a direct child of the first selector.
+
+This can be helpful when you have deeply nested elements and want to control the scope of your styling.
+
+Use the > selector to target the unordered list elements within the nav elements, and use Flexbox to evenly space the children.
+Step 14
+As this is a quiz, you will need a form for users to submit answers. You can semantically separate the content within the form using section elements.
+
+Within the main element, create a form with three nested section elements. Then, make the form submit to https://freecodecamp.org/practice-project/accessibility-quiz, using the correct method.
+Step 15
+To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.
+
+Give each of the section elements the region role.
+Step 16
+Every region role requires a label, which helps screen reader users understand the purpose of the region. One method for adding a label is to add a heading element inside the region and then reference it with the aria-labelledby attribute.
+
+Add the following aria-labelledby attributes to the section elements:
+
+student-info
+html-questions
+css-questions
+Then, within each section element, nest one h2 element with an id matching the corresponding aria-labelledby attribute. Give each h2 suitable text content.
+
