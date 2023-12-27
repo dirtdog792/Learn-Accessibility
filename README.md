@@ -169,4 +169,140 @@ Step 40
 As with the other input and label elements, link the textarea to its corresponding label element, and give it a name attribute.
 Step 41
 Do not forget to give your form a submit button with the text Send.
+Step 42
+Two final semantic HTML elements for this project are the footer and address elements. The footer element is a container for a collection of content that is related to the page, and the address element is a container for contact information for the author of the page.
+
+After the main element, add one footer element, and nest one address element within it.
+Step 43
+Within the address element, add the following:
+
+freeCodeCamp<br />
+San Francisco<br />
+California<br />
+USA
+The br tags will allow each part of the address to be on its own line and are useful for presenting address elements properly.
+Step 44Passed
+The address element does not have to contain a physical geographical location. It can be used to provide a link to the subject.
+
+Wrap a link around the text freeCodeCamp, and set its location to https://freecodecamp.org.
+Step 45
+Back to styling the page. Select the list elements within the navigation bar, and give them the following styles:
+
+color: #dfdfe2;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+Step 46
+On the topic of visual accessibility, contrast between elements is a key factor. For example, the contrast between the text and the background of a heading should be at least 4.5:1.
+
+Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1.
+Step 47
+To make the navigation buttons look more like typical buttons, remove the underline from the anchor tags.
+
+Then, create a new selector targeting the navigation list elements so that when the cursor hovers over them, the background color and text color are switched, and the cursor becomes a pointer.
+Step 48
+Tidy up the header, by using Flexbox to put space between the children, and vertically center them.
+
+Then, fix the header to the top of the viewport.
+Step 49
+When the screen width is small, the h1 does not wrap its text content how it should. Align the text for the h1 element in the center.
+
+Then, give the main padding such that the Student Info section header can be fully seen.
+Step 50
+On small screens, the unordered list in the navigation bar overflows the right side of the screen.
+
+Fix this by using Flexbox to wrap the ul content. Then, set the following CSS properties to correctly align the text:
+
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+Step 51
+Set the width of the section elements to 80% of their parent container. Then, use margins to center the section elements, adding 10px to the bottom margin.
+Also, ensure the section elements cannot be larger than 600px in width.
+Step 52
+Replace the top margin of the h2 elements with 60px of top padding.
+Step 53
+Add padding to the top and left of the .info elements, and set the other values to 0.
+Step 54
+Give the .formrow elements top margin, and left and right padding. The other padding values should be 0.
+
+Then, increase the font size for all input elements.
+Step 55
+To make the first section look more inline, target only the input elements within .info elements, and set their width to 50%, and left-align their text.
+Step 56
+Target all label elements within .info elements, and set their width to 10%, and make it so they do not take up less than 55px.
+Step 57Passed
+To align the input boxes with each other, create a new ruleset that targets all input and label elements within an .info element and set the display property to inline-block.
+
+Also, align the label element's text to the right.
+Step 58
+To neaten the .question-block elements, set the following CSS properties:
+
+text-align: left;
+display: block;
+width: 100%;
+margin-top: 20px;
+padding-top: 5px;
+Step 59
+Make the paragraph elements appear as a higher priority, with the following CSS properties:
+
+margin-top: 5px;
+padding-left: 15px;
+font-size: 20px;
+Step 60
+It is useful to see the default border around the fieldset elements, during development. However, it might not be the style you want.
+
+Remove the border and bottom padding on the .question elements.
+Step 61
+While ul/li elements are great at providing bullets for list items, your radio buttons don't need them. You can control what the bullets look with the list-style property. For example you can turn your bullets into circles with the following:
+
+ul {
+  list-style: circle;
+}
+Remove the default styling for the .answers-list items by setting its style to none, and remove the unordered list padding.
+Step 62
+Give the submit button a freeCodeCamp-style design, with the following CSS properties:
+
+display: block;
+margin: 40px auto;
+width: 40%;
+padding: 15px;
+font-size: 23px;
+background: #d0d0d5;
+border: 3px solid #3b3b4f;
+Step 63
+Set the footer background color to #2a2a40, and use Flexbox to horizontally center the text.
+Step 64
+Now, we cannot read the text. Target the footer and the anchor element within to set the font color to a color of adequate contrast ratio.
+Step 65
+Horizontally center all the text within the address element, and add some padding.
+Step 66Passed
+Clicking on the navigation links should jump the viewport to the relevant section. However, this jumping can be disorienting for some users.
+
+Select all elements, and set the scroll-behavior to smooth.
+Step 67
+Certain types of motion-based animations can cause discomfort for some users. In particular, people with vestibular disorders have sensitivity to certain motion triggers.
+
+The @media at-rule has a media feature called prefers-reduced-motion to set CSS based on the user's preferences. It can take one of the following values:
+
+reduce
+no-preference
+@media (feature: value) {
+  selector {
+    styles
+  }
+}
+Wrap the style rule that sets scroll-behavior: smooth within an @media at-rule with the media feature prefers-reduced-motion having no-preference set as the value.
+Step 68
+Finally, the navigation accessibility can be improved by providing keyboard shortcuts.
+
+The accesskey attribute accepts a space-separated list of access keys. For example:
+
+<button type="submit" accesskey="s">Submit</button>
+Give each of the navigation links a single-letter access key.
+
+Note: It is not always advised to use access keys, but they can be useful
+
+Well done. You have completed the Accessibility Quiz practice project.
 
